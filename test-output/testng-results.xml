@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-28T00:33:02 IST" name="Suite" finished-at="2022-10-28T00:33:31 IST" duration-ms="29497">
+    <groups>
+    </groups>
+    <test started-at="2022-10-28T00:33:02 IST" name="TestChrome" finished-at="2022-10-28T00:33:15 IST" duration-ms="12716">
+      <class name="com.Test.Test1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.Test1@4007f65e]" started-at="2022-10-28T00:33:02 IST" name="setUp" finished-at="2022-10-28T00:33:13 IST" duration-ms="11386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifytest1()[pri:0, instance:com.Test.Test1@4007f65e]" started-at="2022-10-28T00:33:13 IST" name="verifytest1" finished-at="2022-10-28T00:33:14 IST" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytest1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.Test1@4007f65e]" started-at="2022-10-28T00:33:14 IST" name="tearDown" finished-at="2022-10-28T00:33:15 IST" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.Test1 -->
+    </test> <!-- TestChrome -->
+    <test started-at="2022-10-28T00:33:16 IST" name="TestEdge" finished-at="2022-10-28T00:33:31 IST" duration-ms="15615">
+      <class name="com.Test.Test1">
+        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.Test1@5884a914]" started-at="2022-10-28T00:33:00 IST" name="BS" finished-at="2022-10-28T00:33:02 IST" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.Test1@5884a914]" started-at="2022-10-28T00:33:16 IST" name="setUp" finished-at="2022-10-28T00:33:29 IST" duration-ms="13652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifytest1()[pri:0, instance:com.Test.Test1@5884a914]" started-at="2022-10-28T00:33:29 IST" name="verifytest1" finished-at="2022-10-28T00:33:30 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytest1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.Test1@5884a914]" started-at="2022-10-28T00:33:30 IST" name="tearDown" finished-at="2022-10-28T00:33:31 IST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Test.Test1 -->
+    </test> <!-- TestEdge -->
+  </suite> <!-- Suite -->
+</testng-results>
