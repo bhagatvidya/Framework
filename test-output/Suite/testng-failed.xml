@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.Utility.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="TestChrome(failed)">
     <parameter name="BrowserName" value="Chrome"/>
     <classes>
       <class name="com.Test.Test1">
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- com.Test.Test1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

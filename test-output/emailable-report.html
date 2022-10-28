@@ -9,14 +9,104 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TestChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,716</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestEdge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,615</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">28,331</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestChrome</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">40,741</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestEdge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48,807</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">89,548</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m0">verifytest1</a></td><td rowspan="1">1666897393736</td><td rowspan="1">582</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m1">verifytest1</a></td><td rowspan="1">1666897409849</td><td rowspan="1">1029</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestChrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m0">setUp</a></td><td rowspan="1">1666959291236</td><td rowspan="1">40367</td></tr><tr><th colspan="4">TestChrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1666959331925</td><td rowspan="1">-1666959331925</td></tr><tr><th colspan="4">TestChrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m2">verifytest1</a></td><td rowspan="1">1666959331676</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.Test.Test1</td><td><a href="#m3">verifytest1</a></td><td rowspan="1">1666959375634</td><td rowspan="1">1714</td></tr></tbody>
 </table>
-<h2>TestChrome</h2><h3 id="m0">com.Test.Test1#verifytest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestEdge</h2><h3 id="m1">com.Test.Test1#verifytest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestChrome</h2><h3 id="m0">com.Test.Test1#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-EQE7IHR&apos;, ip: &apos;192.168.0.103&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.Utility.BaseClass.setUp(BaseClass.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 36 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:251)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:42564/status] to be available after 20014 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:247)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Test.Test1#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Test.Test1#verifytest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-EQE7IHR&apos;, ip: &apos;192.168.0.103&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.Utility.BaseClass.setUp(BaseClass.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 36 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 38 more
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;4.5.2&apos;, revision: &apos;702c64f787c&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:251)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:42564/status] to be available after 20014 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:247)
+	... 5 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 6 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestEdge</h2><h3 id="m3">com.Test.Test1#verifytest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
