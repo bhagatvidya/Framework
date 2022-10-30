@@ -15,7 +15,9 @@ public class Test1 extends BaseClass{
 		//WebElement
 		LoginPom login=PageFactory.initElements(driver, LoginPom.class);
 		Library.custom_sendKeys(login.gettxt_email(),excel.getStringData("Sheet1", 0, 0),"Email");
+		Library.ApplyExplicitWait(driver,login.gettxt_pass(), 5);
 		Library.custom_sendKeys(login.gettxt_pass(),excel.getStringData("Sheet1", 0, 1),"Password");
+		Library.ApplyExplicitWaitClickable(driver,login.gettxt_pass(), 5);
 		Library.custom_click(login.getbtn_login(),"Login Button");
 		//login.gettxt_email().sendKeys("vidya24@gmail.com");
 		//login.gettxt_pass().sendKeys("Vidya24");

@@ -1,5 +1,7 @@
 package com.Utility;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -37,6 +39,8 @@ public class BaseClass {
 		
 		driver.get(config.getBaseUrl());
 		driver.manage().window().maximize();
+		//implicit wait can handle the synchronization of project  apply globally 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	@AfterMethod
 	public void tearDown()

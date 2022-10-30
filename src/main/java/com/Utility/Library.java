@@ -1,6 +1,11 @@
 package com.Utility;
 
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -33,6 +38,16 @@ public class Library {
 			//System.out.println(e.getMessage());	
 			test.log(Status.FAIL,e.getMessage());
 			}
+	}
+	public static void ApplyExplicitWait(WebDriver driver,WebElement element,int time) {
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		
+	}
+	public static void ApplyExplicitWaitClickable(WebDriver driver,WebElement element,int time) {
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		
 	}
 
 }
