@@ -39,6 +39,7 @@ public class Library {
 			test.log(Status.FAIL,e.getMessage());
 			}
 	}
+	//Apply Explicit wait for particular WebElement 
 	public static void ApplyExplicitWait(WebDriver driver,WebElement element,int time) {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time));
 		wait.until(ExpectedConditions.visibilityOf(element));
